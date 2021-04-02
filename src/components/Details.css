@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Header {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.Central_header {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  border-bottom: rgb(114, 113, 113) 2px solid;
+  padding-bottom: 1%;
+}
+
+.DarkMode {
+  border: none;
+  background-color: white;
+  outline: none;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  height: 100vh;
+  /* border: solid 1px red; */
+}
+.Central_Container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-self: center;
+}
+
+.BackButton {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+}
+
+.BackButton button {
+  border-radius: 5%;
+  border-color: white;
+  background-color: white;
+  border-radius: 5%;
+  outline: none;
+  height: 40px;
+  width: 10%;
+}
+
+.Info {
+  display: flex;
+  /* border: solid 1px red; */
+  height: 50vh;
+  padding: 2%;
+  justify-content: space-between;
+}
+.Title h1 {
+  padding-left: 4px;
+  margin-left: 6px;
+}
+.Flag {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* border: solid 1px red; */
+  width: 50%;
+  padding: 2%;
+}
+
+.Div_flag {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+.Country_Info {
+  /* border: solid 1px red; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Part1 {
+  /* border: solid 1px red; */
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+.Part1_1 {
+  /* border: solid 1px black; */
+  width: 50%;
+  height: 35vh;
+}
+
+.Part1_2 {
+  /* border: solid 1px black; */
+  width: 50%;
+  height: 35vh;
+}
+
+.Part2 {
+  /* border: solid 1px red; */
+  height: 10vh;
+  /* padding: 4px; */
+  align-content: center;
+  word-spacing: 2px;
+  display: flex;
+}
+.TitlePart2 {
+  width: 20%;
+  height: 50%;
+  align-self: center;
+  padding-left: 2.1%;
+}
+.BorderCountries {
+  width: 70%;
+  height: 50%;
+  /* height: 50%; */
+  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.BorderCountry {
+  border-radius: 4%;
+  border-color: rgb(143, 141, 141);
+  background-color: rgb(143, 141, 141);
+  width: 10%;
+  align-self: center;
+  padding-left: 4%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  word-spacing: 2px;
+  line-height: 2em;
+}
+
+span {
+  margin-left: 2px;
+}
