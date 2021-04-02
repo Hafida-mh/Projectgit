@@ -137,6 +137,6 @@ justify-content: space-between;
 }
 
 .informations p+ p{
-   line-height: 0.2;
+   line-height: 1.5;
 
 }
