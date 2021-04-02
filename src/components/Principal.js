@@ -2,6 +2,8 @@ import axios from "axios";
 import React from "react";
 import { useState, useEffect } from "react";
 import "./principal.css";
+import {useHistory} from 'react-router-dom'
+
 const Principal = () => {
   const [country, setcountry] = useState();
   const [searchCountry, setsearchCountry] = useState("");
@@ -23,6 +25,8 @@ const Principal = () => {
     getData();
   }, []);
 
+
+  const history = useHistory()
   return (
     <div className="Principal">
       <header>
@@ -80,7 +84,7 @@ const Principal = () => {
                 })
                 .map((elem) => {
                   return (
-                    <div className="boxCountry">
+                    <div className="boxCountry" onClick={()=>history.push(`/${elem.name}`)} >
                       <div className="flag">
                         <img src={elem.flag} alt="flag" />
                       </div>

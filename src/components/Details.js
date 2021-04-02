@@ -2,13 +2,16 @@ import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import "./Details.css";
-
+import { useParams } from "react-router-dom";
+import {useHistory} from 'react-router-dom'
 const Details = () => {
   const [country, setCountry] = useState();
+  const {name} = useParams()
+  const history = useHistory()
   const getData = async () => {
     try {
       const { data } = await axios.get(
-        "http://restcountries.eu/rest/v2/name/Belgium"
+        `http://restcountries.eu/rest/v2/name/${name}`
       );
       setCountry(data);
     } catch (error) {
@@ -34,7 +37,7 @@ const Details = () => {
       <div className="Container">
         <div className="Central_Container">
           <div className="BackButton">
-            <button>
+            <button onClick={()=>history.goBack()}> 
               <i class="fas fa-arrow-left"></i> Back
             </button>
           </div>
