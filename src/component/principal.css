@@ -1,0 +1,142 @@
+.Principal {
+    border: 1px hidden red;
+    height: 100%;
+    width: 100%;
+}
+
+.headerContainer  {
+    border-bottom: 1px solid #eeeded;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    box-shadow: 0px  2px 6px #d3d0d0;
+}
+
+.headerContainer .container, .searchCountry {
+    border: 1px hidden black;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+align-items: center;}
+
+.headerContainer .container h2 {
+    font-size: 18px;
+}
+
+.headerContainer .container button {
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.displayCountries {
+    border: 1px hidden blue;
+    height: auto;
+    width: 100%;
+    background: hsl(0, 0%, 98%);
+}
+
+.searchCountryAll {
+    border: 1px hidden black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.searchCountry {
+height: 90px;
+width: 90%;
+display: flex;
+justify-content: space-between;
+}
+
+.formOne, .formTwo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    border: 1px solid #eeeded;
+    box-shadow: 0px  0px 2px #d3d0d0;
+    background: white;
+}
+
+.formOne input {
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    width: 400px;
+}
+
+.formTwo select {
+    border: none;
+    height: 100%;
+    outline: none;
+}
+
+.formTwo select option {
+    margin-top: 10px;
+}
+
+
+.fa-search {
+    margin-left: 50px;
+}
+
+.countryBox {
+    border: 1px hidden black;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.countryBox .boxes {
+    height: auto;
+    width: 90%;
+    border: 1px hidden black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxCountry {
+  
+    height: 320px;
+    width: 260px;
+    margin: 15px;
+    border: 1px solid #eeeded;
+    box-shadow: 0px  0px 2px #d3d0d0;
+}
+
+.flag {
+    border: 1px hidden red;
+    height: 150px;
+    width: 100%;
+    position: relative;
+}
+
+.flag img {
+   position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: cover;
+}
+
+.informations {
+    border: 1px hidden pink;
+    height: 165px;
+    width: 100%;
+    padding: 10px;
+}
+
+.informations p+ p{
+   line-height: 0.2;
+
+}
